@@ -1,0 +1,15 @@
+{
+  "name": "install-module",
+  "version": "0.0.0",
+  "description": "Install an NPM module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "url": "git@github.com:azer/install-module.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD"
+}
