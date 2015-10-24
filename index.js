@@ -4,7 +4,10 @@ module.exports = install;
 
 function install (name, options, callback) {
   if (Array.isArray(name)) name = name.join(' ');
-  if (typeof options == 'function') callback = options;
+  if (typeof options == 'function') {
+    callback = options;
+    options = {};
+  }
 
   var cmd = 'npm install ';
 
@@ -13,7 +16,7 @@ function install (name, options, callback) {
 
   cmd += name;
 
-  exec(cmd, function (error) {
+  exec(cmd, options.cp, function (error, stdout, stderr) {
     callback(error);
   });
 }

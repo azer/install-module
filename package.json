@@ -11,5 +11,8 @@
     "type": "git"
   },
   "author": "azer",
-  "license": "BSD"
+  "license": "BSD",
+  "devDependencies": {
+    "prova": "^2.1.2"
+  }
 }
