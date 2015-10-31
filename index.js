@@ -13,6 +13,7 @@ function install (name, options, callback) {
 
   if (options.save) cmd += '--save ';
   if (options.saveDev) cmd += '--save-dev ';
+  if (options.global) cmd += '-g ';
 
   cmd += name;
 

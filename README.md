@@ -24,6 +24,7 @@ Available options:
 
 * **save:** Save as dependency
 * **saveDev:** Save as development dependency
+* **global:** Save as global dependency
 * **cp:** Child process options that'll be passed to exec call.
 
 ```js
