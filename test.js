@@ -16,7 +16,7 @@ test('with options', function (t) {
       t.ok(exists(wd + '/node_modules/format-text'));
       t.ok(exists(wd + '/node_modules/go'));
       t.ok(exists(wd + '/node_modules/comma-list'));
-      t.deepEqual(Object.keys(require(wd + '/package').dependencies), ['comma-list', 'format-text', 'go']);
+      t.deepEqual(Object.keys(require(wd + '/package').dependencies), ['comma-list', 'format-text', 'go', 'local-debug']);
     });
   });
 });

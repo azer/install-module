@@ -14,5 +14,8 @@
   "license": "BSD",
   "devDependencies": {
     "prova": "^2.1.2"
+  },
+  "dependencies": {
+    "local-debug": "0.0.0"
   }
 }

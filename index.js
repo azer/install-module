@@ -1,3 +1,4 @@
+var debug = require("local-debug")('install-module');
 var exec = require("child_process").exec;
 
 module.exports = install;
@@ -17,6 +18,7 @@ function install (name, options, callback) {
 
   cmd += name;
 
+  debug(cmd, options);
   exec(cmd, options.cp, function (error, stdout, stderr) {
     callback(error);
   });
