@@ -10,7 +10,7 @@ function install (name, options, callback) {
     options = {};
   }
 
-  var cmd = 'npm install ';
+  var cmd = 'npm install --silent ';
 
   if (options.save) cmd += '--save ';
   if (options.saveDev) cmd += '--save-dev ';
